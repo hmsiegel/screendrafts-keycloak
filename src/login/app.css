@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+:root {
+   --background: #88add0;
+   --foreground: #171717;
+   --sd-blue: #1e448b;
+   --sd-red: #cb2032;
+}
+
+body.kcBodyClass {
+  @apply antialiased;
+  @apply bg-gradient-to-t;
+  @apply from-[var(--background)];
+  @apply via-slate-400;
+  @apply to-[var(--sd-blue)];
+  @apply text-[var(--foreground)];
+  @apply font-[Roboto];
+}
+
+.kcFormCardClass {
+   @apply bg-[#fffdfd];
+   @apply rounded-lg;
+   @apply shadow-lg;
+}
+
+.kcHeaderClass {
+   @apply font-[Oswald];
+   @apply text-6xl;
+   @apply font-bold;
+   @apply text-black;
+   @apply flex;
+   @apply items-center;
+   @apply flex-col;
+}
+
+.kcFormHeaderClass {
+   @apply font-[inter];
+   @apply text-5xl;
+   @apply text-black;
+   @apply uppercase;
+}
+
+.kcButtonClass {
+   @apply font-[Oswald];
+   @apply rounded-lg;
+}
+
+.kcButtonPrimaryClass {
+   @apply bg-[var(--sd-blue)];
+   @apply text-white;
+   @apply hover:bg-blue-400;
+}
+
+.kcInfoAreaWrapperClass, .kcFormSocialAccountListButtonClass {
+   @apply rounded-lg;
+}
+
+.kcLabelWrapperClass, .kcLabelClass {
+   @apply font-[inter];
+   @apply text-black;
+   @apply font-bold;
+}
+
+.subtitle {
+   @apply text-center;
+   @apply text-base;
+   @apply mb-2;
+}
